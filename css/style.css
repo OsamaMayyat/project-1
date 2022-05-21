@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0 ;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --maincolor:rgb(226, 43, 104);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;  
+    background-color: rgba(89, 0, 255, 0.801);  
+}
+nav .a-color,
+nav .logo-color{
+    color: white !important;
+}
+nav .logo-color span{
+    color: var(--maincolor);
+}
+nav .a-color:hover{
+    color: var(--maincolor) !important;
+}
+#main-page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#carouselExampleIndicators{
+    height: 100%;
+    width: 100%;
+    position: absolute;  
+}
+.carousel-inner,
+.carousel-item,
+img{
+    height: 100%;
+    width: 100%; 
+}
+img{
+    object-fit: cover;
+}
+#main-page .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+#main-page .text span{
+    color: var(--maincolor) ;
+}
+.media img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+#toole-page{
+    padding-top: 50px;
+}
+#toole-page .texts2{
+    border-bottom: 3px solid blue;
+    padding: 0 50px;
+    padding-bottom: 20px;
+    font-size: 40px ;
+    color: var(--maincolor);
+}
+#toole-page .toolName{
+    font-size: 25px;
+    color: var(--maincolor);
+}
+#toole-page .texts2 span{
+    color: black;
+}
+.card a{
+    font-size: 18px;
+    color: var(--maincolor);
+}
+.card .cardName{
+    font-size: 28px;
+}
+.card img{
+    border-radius: 15px;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px 5px #ddd;
+}
+#team-page{
+    background-image: url(../image/imgcover3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+#team-page .text{
+
+    font-size: 40px ;
+    color: rgb(226, 43, 104);
+
+}
+.main-card img{
+    border-radius: 50%;
+    border: 5px solid white;
+    height: 250px;
+}
+.font a{
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+}
+.font a:hover{
+    color: var(--maincolor);
+}
+.main-card p{
+    font-size: 25px;
+    color: white;
+}
+.view{
+    padding: 50px 10px;
+}
+.viewtext{
+    font-size: 40px;
+}
+.viewtext span{
+    color: var(--maincolor);
+}
+.bto{
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
+}
+.bto:hover{
+    color: white;
+    background-color: var(--maincolor);
+}
+.lesstext{
+    transition: 1s;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.contacttext{
+
+    font-size: 40px;
+    color: var(--maincolor);
+    margin-bottom: 40px;
+}
+#contact-page{
+    padding: 50px 0;
+    background-image: url(../image/imgcover2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bto1{
+    margin-top: 20px;
+    border: 1px solid var(--maincolor);
+    color: white;
+    background-color: var(--maincolor);
+    width: 100%;
+    border-radius:20px;
+}
+.bto1:hover{
+    color: var(--maincolor);
+    background-color: white;
+}
+.pro-bar{
+    background-color: var(--maincolor);
+}
+#price-page{
+    padding: 50px 0;
+}
+.pricetext{
+    border-bottom: 3px solid blue;
+    padding: 0 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: var(--maincolor);
+    margin-bottom: 40px;
+}
+.pricertitel{
+    font-size: 25px;
+    color: var(--maincolor);
+}   
+.price{
+    background-color: #ddd;
+    padding: 7px 0;
+    font-size: 25px;
+    color: rgb(76, 0, 255) !important;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 7px;
+    transition: 1s;
+
+}
+.priceborder:hover .price{
+    transform: rotate(360deg);
+    box-shadow: 1px 1px 15px 3px rgb(131, 127, 127);
+}
+.pricerow{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pricebtn{
+    padding: 7px 10px;
+    background-color: white;
+    color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+    border-radius: 20px;
+}
+.pricebtn:hover{
+    background-color: var(--maincolor);
+    color: white;
+}
+.priceborder{
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 10px;
+    transition: 0.7s;
+}
+.priceborder:hover{
+    transform: scale(1.1);
+}
+#Gallery-page{
+    padding: 50px 0;
+}
+.Galleryp{
+    border-bottom: 3px solid blue;
+    padding: 0 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: var(--maincolor);
+}
+.Gallerycol{
+    position: relative;
+    overflow: hidden;
+}
+.Gallerycol:hover .Gallerytext{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+.Gallerycol:hover .Galleryimg{
+    transform: scale(1.25);
+}
+.Galleryimg{
+    position: relative;
+    z-index: -1;
+    transition: 0.7s;
+    width: 100%;
+}
+.Gallerytext{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-size: 25px;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+.Gallerytext span{
+    color: var(--maincolor);
+}
+#information{
+    position: relative;
+    padding: 100px 0;
+}
+#information img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+#information .row h2{
+    color: var(--maincolor);
+}
+
+footer{
+    background-color: rgba(126, 67, 235, 0.801) !important;
+    padding-top: 8px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+footer .container p{
+    font-size: 20px;
+    color: white;
+}
+footer .container p span{
+    color: var(--maincolor);
+}
+footer .container a{
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+footer .container a:hover{
+    color: var(--maincolor);
+
+}
+footer .foottext{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#login-page{
+    padding-top: 56px;
+}
+.login{
+    padding: 20px ;
+    text-align: center;
+    border: 3px solid #ddd;
+    border-radius: 15px;
+    transition: 0.7s;
+}
+.login:hover{
+    box-shadow: 2px 2px 15px 10px aqua;
+
+}
+
+.page{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 20px;
+    padding-top: 50px;
+
+}
+.login .onei{
+    color: #ddd;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+.login h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ddd;
+}
+.login form .input1{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    padding-left: 25px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #ddd;
+    transition: 1s;
+    position: relative;
+}
+.login form .input1:focus{
+    outline: none;
+    border-bottom: 2px solid aqua;
+    border-radius: 10px;
+}
+.login button{
+    margin: 15px 0;
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    color: aqua;
+
+}
+.login button:hover{
+    background: aqua;
+    border: 2px solid aqua;
+    color: white;
+
+}
+
+.login .forget{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login .forget input{
+    margin-right: 5px;
+}
+.login .account{
+    margin-top: 10px;
+    float: left;
+    text-decoration: none;
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+}
+.login .account:hover{
+    color: white;
+    border: 2px solid aqua;
+    background-color: aqua;
+}
+.towi{
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    color: #ddd;
+    transition: 0.7s;
+}
+.login:hover .towi{
+    color: aqua;
+
+}
